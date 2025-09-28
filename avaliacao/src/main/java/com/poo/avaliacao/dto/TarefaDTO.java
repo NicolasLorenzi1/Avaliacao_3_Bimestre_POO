@@ -1,5 +1,7 @@
 package com.poo.avaliacao.dto;
 
-public record TarefaDTO(String nome, String descricao, String dataEntrega, boolean importante) {
+import java.time.LocalDateTime;
+
+public record TarefaDTO(String nome, String descricao, LocalDateTime dataEntrega, boolean importante, String status) {
     
 }
